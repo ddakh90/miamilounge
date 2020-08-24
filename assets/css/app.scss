@@ -1,0 +1,316 @@
+
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Righteous|Roboto&display=swap');
+
+
+/* .container, .container-fluid{
+    margin-top: 20px;
+    
+} */
+
+html,body{
+  font-family: 'Righteous', cursive;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+
+
+#txtsdshow{
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0 #2E2E2E, 2px -2px 0 #2E2E2E, -2px 2px 0 #2E2E2E, -2px -2px 0 #2E2E2E, 2px 0px 0 #4074b5, 0px 2px 0 #2E2E2E, -2px 0px 0 #2E2E2E, 0px -2px 0 #2E2E2E;
+}
+
+
+.bkgtitle{
+    padding: 2em;
+    background-size: cover;
+    background-position: center center;
+
+    .btn{
+        margin-top: 2em;
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+}
+
+.ad-title h1, .ad-title p{
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.carousel-caption h5, .carousel-caption p{
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    color: white!important;
+}
+
+.footer{
+    width: 100%;
+}
+
+.avatar{
+    max-width: 128px;
+    max-height: 128px;
+    border-radius: 50%;
+
+    &.avatar-medium{
+        max-width: 64px;
+        max-height: 64px;
+    }
+    
+    &.avatar-mini{
+        max-width: 24px;
+        max-height: 24px;
+    }
+    
+    &.avatar-micro{
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
+
+
+
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover{
+    color: firebrick !important;
+}
+
+span.rating i {
+    color: goldenrod;
+}
+
+.alert {
+    a {
+    text-decoration: none;
+    }
+
+    .btn {
+        color: white;
+    }
+}
+.headervid {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .headervid video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .headervid .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .headervid .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    .headervid {
+      background: url('https://img.wallpapersafari.com/desktop/1600/900/45/34/Hd3rUY.jpg') black no-repeat center center scroll;
+    }
+    .headervid video {
+      display: none;
+    }
+  }
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('https://www.blackdogadvertising.com/wp-content/uploads/2018/12/key-west-steamplant-residences-exterior-aerial-600x1200.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+  height: auto;
+  border-radius: 2rem;
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  cursor: text;
+  /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+#titlehead{
+  font-size: 40px;
+}
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}  

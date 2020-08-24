@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Miami Lounge - {% block title %}{% endblock %}</title>
+
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        
+        {# <link rel="stylesheet" href="/css/bootstrap.min.css"> #}
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        {# <link rel="stylesheet" href="/css/app.css"> #}
+        {# <link rel="stylesheet" href="{{ asset('build/app.css') }}">#}
+        {{ encore_entry_link_tags('app') }}
+        {# <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet"> #}
+        
+     
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+
+       {% include 'partials/header.html.twig' %}
+    
+
+        {% block body %}{% endblock %}
+
+        {% include 'partials/footer.html.twig' %}
+
+
+        {#<script src="{{asset('build/js/app.js')}}"></script>#}
+        {{ encore_entry_script_tags('app') }}
+        {# <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script> #}
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

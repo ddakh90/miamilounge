@@ -1,0 +1,21 @@
+{
+    "devDependencies": {
+        "@symfony/webpack-encore": "^0.30.2",
+        "bootstrap": "^4.4.1",
+        "node-sass": "^4.14.1",
+        "popper.js": "^1.16.1",
+        "sass-loader": "^7.0.1",
+        "webpack-notifier": "^1.6.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress"
+    },
+    "dependencies": {
+        "jquery": "^3.5.1"
+    }
+}
